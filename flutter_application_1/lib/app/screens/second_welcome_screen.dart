@@ -14,8 +14,8 @@ class SecondWelcomeScreen extends StatelessWidget {
           children: [
             Image.asset(
               'assets/images/illustration.png',
-              width: 643,
-              height: 573,
+              width: 640,
+              height: 520,
               fit: BoxFit.cover,
             ),
             Text(
@@ -27,10 +27,10 @@ class SecondWelcomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 24,
+              height: 16,
             ),
             SizedBox(
-              width: 311,
+              width: 250,
               child: Text(
                 'We’d like to check that your preferences and details are accurate.',
                 textAlign: TextAlign.center,
@@ -42,7 +42,7 @@ class SecondWelcomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 24,
+              height: 16,
             ),
             ElevatedButton(
               onPressed: () {
@@ -61,6 +61,23 @@ class SecondWelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 16,
+            ),
+            ElevatedButton(
+              onPressed: (){},
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(311, 48),
+                backgroundColor: Color(0xff141414),
+              ),
+               child: Text(
+                'Sign for monster livescore',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
+               ),
+               ),
           ],
         ),
       ),
