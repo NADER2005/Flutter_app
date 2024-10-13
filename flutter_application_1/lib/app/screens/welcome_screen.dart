@@ -17,16 +17,16 @@ class WelcomeScreen extends StatelessWidget {
                 children: [
                   SvgPicture.asset(
                     'assets/images/pattern.svg',
-                    width: 700,
-                    height: 700,
+                    width: 472,
+                    height: 472,
                   ),
               Positioned(
-                top: 243,
-                left: 178,
+                top: 176,
+                left: 118,
                 child: SvgPicture.asset(
                   'assets/icons/icon.svg',
-                  width: 200,
-                  height: 200,
+                  width: 124,
+                  height: 124,
                 ),
               ),
                 ],
@@ -35,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
                 'MONSTER LIVESCORE',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 50,
+                  fontSize: 36,
                   fontFamily: 'Teko',
                 ),
               ),

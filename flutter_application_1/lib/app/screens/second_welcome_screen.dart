@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/screens/third_welcome_screen.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SecondWelcomeScreen extends StatelessWidget {
@@ -13,15 +14,15 @@ class SecondWelcomeScreen extends StatelessWidget {
           children: [
             Image.asset(
               'assets/images/illustration.png',
-              width: 800,
-              height: 800,
+              width: 643,
+              height: 573,
               fit: BoxFit.cover,
             ),
             Text(
               'MONSTER LIVESCORE',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 50,
+                fontSize: 36,
                 fontFamily: 'Teko',
               ),
             ),
@@ -31,7 +32,7 @@ class SecondWelcomeScreen extends StatelessWidget {
             SizedBox(
               width: 311,
               child: Text(
-                'Never miss a goal - get live match alerts, fixtures and results for your favourite teams and competitions',
+                'We’d like to check that your preferences and details are accurate.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xff808797),
@@ -44,9 +45,13 @@ class SecondWelcomeScreen extends StatelessWidget {
               height: 24,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ThirdWelcomeScreen();
+                  }));
+              },
               style: ElevatedButton.styleFrom(
-                  fixedSize: Size(330, 48),
+                  fixedSize: Size(311, 48),
                   backgroundColor: Color(0xffF8FE11)),
               child: Text(
                 'Get started',
