@@ -7,7 +7,7 @@ class ThirdWelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff141414),
+      backgroundColor: const Color(0xff141414),
       body: Center(
         child: Column(
           children: [
@@ -25,7 +25,7 @@ class ThirdWelcomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Text(
+            const Text(
               'MONSTER LIVESCORE',
               style: TextStyle(
                 color: Colors.white,
@@ -33,10 +33,10 @@ class ThirdWelcomeScreen extends StatelessWidget {
                 fontFamily: 'Teko',
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 24,
             ),
-            Text(
+            const Text(
               textAlign: TextAlign.center,
               'We’d like to check that your preferences and details are accurate.',
               style: TextStyle(
@@ -45,15 +45,15 @@ class ThirdWelcomeScreen extends StatelessWidget {
               letterSpacing: -0.5,
               ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               ElevatedButton(
                 onPressed: (){},
                 style: ElevatedButton.styleFrom(
-                  fixedSize: Size(311, 48),
-                  backgroundColor: Color(0xffF8FE11)),
-              child: Text(
+                  fixedSize: const Size(311, 48),
+                  backgroundColor: const Color(0xffF8FE11)),
+              child: const Text(
                 'Get started',
                 style: TextStyle(
                   color: Color(0xff141414),
@@ -67,3 +67,4 @@ class ThirdWelcomeScreen extends StatelessWidget {
     );
   }
 }
+

@@ -8,7 +8,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff141414),
+      backgroundColor: const Color(0xff141414),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -31,7 +31,7 @@ class WelcomeScreen extends StatelessWidget {
               ),
                 ],
               ),
-              Text(
+              const Text(
                 'MONSTER LIVESCORE',
                 style: TextStyle(
                   color: Colors.white,
@@ -42,7 +42,7 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 24,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 311,
                 child: Text(
                   'Never miss a goal - get live match alerts, fixtures and results for your favourite teams and competitions',
@@ -54,19 +54,19 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SecondWelcomeScreen();
+                    return const SecondWelcomeScreen();
                   }));
                 },
                 style: ElevatedButton.styleFrom(
-                    fixedSize: Size(311, 48),
-                    backgroundColor: Color(0xffF8FE11)),
-                child: Text(
+                    fixedSize: const Size(311, 48),
+                    backgroundColor: const Color(0xffF8FE11)),
+                child: const Text(
                   'Get started',
                   style: TextStyle(
                     color: Color(0xff141414),

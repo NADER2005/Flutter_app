@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/app/screens/third_welcome_screen.dart';
-import 'package:flutter_svg/svg.dart';
-
 class SecondWelcomeScreen extends StatelessWidget {
   const SecondWelcomeScreen ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Color(0xff141414),
+       backgroundColor: const Color(0xff141414),
       body: Center(
         child: Column(
           children: [
@@ -18,7 +16,7 @@ class SecondWelcomeScreen extends StatelessWidget {
               height: 520,
               fit: BoxFit.cover,
             ),
-            Text(
+            const Text(
               'MONSTER LIVESCORE',
               style: TextStyle(
                 color: Colors.white,
@@ -29,7 +27,7 @@ class SecondWelcomeScreen extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            SizedBox(
+            const SizedBox(
               width: 250,
               child: Text(
                 'We’d like to check that your preferences and details are accurate.',
@@ -41,19 +39,19 @@ class SecondWelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             ElevatedButton(
               onPressed: () {
                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return ThirdWelcomeScreen();
+                    return const ThirdWelcomeScreen();
                   }));
               },
               style: ElevatedButton.styleFrom(
-                  fixedSize: Size(311, 48),
-                  backgroundColor: Color(0xffF8FE11)),
-              child: Text(
+                  fixedSize: const Size(311, 48),
+                  backgroundColor: const Color(0xffF8FE11)),
+              child: const Text(
                 'Get started',
                 style: TextStyle(
                   color: Color(0xff141414),
@@ -61,16 +59,16 @@ class SecondWelcomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             ElevatedButton(
               onPressed: (){},
               style: ElevatedButton.styleFrom(
-                fixedSize: Size(311, 48),
-                backgroundColor: Color(0xff141414),
+                fixedSize: const Size(311, 48),
+                backgroundColor: const Color(0xff141414),
               ),
-               child: Text(
+               child: const Text(
                 'Sign for monster livescore',
                 style: TextStyle(
                   color: Colors.white,
